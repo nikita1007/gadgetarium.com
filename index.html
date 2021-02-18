@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гаджетариум</title>
+    <link rel="shortcut icon" href="images/site-logo.png" type="image/png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <div class="page">
+
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__top-inner">
+              <div class="site-logo">
+                  <a href="index.html"><img class="site-logo__img" src="images/site-logo.svg" alt=""></a>
+                  <div class="site-logo__title">
+                    <p class="site-logo__main-title">Гаджетариум</p>
+                    <p class="site-logo__subtitle">Магазин электроники</p>
+                  </div>
+              </div>
+              <div class="navbar">
+                  <nav class="nav">
+                    <ul class="nav-inner">
+                      <li class="nav-inner__item nav-inner__item--active"><a href="#">Главная</a></li>
+                      <li class="nav-inner__item"><a href="#">Компьютеры</a></li>
+                      <li class="nav-inner__item"><a href="#">Телефоны</a></li>
+                      <li class="nav-inner__item"><a href="#">Планшеты</a></li>
+                      <li class="nav-inner__item"><a href="#">Дроны</a></li>
+                      <li class="nav-inner__item nav-inner__anouther">
+                        <a href="#">&bull; &bull; &bull;</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              <div class="phone-call">
+                  <a class="phone-call__number" href="tel:">+7 705 354 7809</a>
+                  <a class="phone-call__button" href="tel:">Позвонить</a>
+              </div>
+              <div class="cart-wallet">
+                  <a href="#"><img class="cart-wallet__cart" src="images/icons/cart.svg" alt=""></a>
+                  <div class="cart-wallet__wallet"><a href="#">8734 <span class="wallet-ru">руб.</span> <i class="fas fa-sort-down"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom-inner">
+            <div class="product-slider">
+              <div class="product-slider__text-box">
+                <h1 class="product-slider__title">Яркие гаджеты </br> на любой вкус и цвет</h1>
+                <p class="product-slider__text">В нашем интернет-магазине вы найдете различную электронику от разных известных брендов</p>
+                <a class="product-slider__catalog-url" href="#catalog">Смотреть каталог</a>
+              </div>
+              <div class="product-slider__content">
+                <div class="product-slider__slides">
+                  <div class="product-slider__slide product-slider__slide--active">
+                    <div class="product-slider__slide-background-image" style="background-image: url(images/items-elems/main-slider/backgrounds/bg-1.png);"></div>
+                    <div class="product-slider__content-product"><img src="images/items-elems/main-slider/products/dron.png" alt=""></div>
+                    <div class="product-slider__content-text">
+                      <a class="product-slider__product-name" href="#">DJI Mavic PRO</a>
+                      <p class="product-slider__product-about">32 MP Sphere Panoramas Foldable & Portable 3-Axis Gimbal & 4K Camera</p>
+                      <p class="product-slider__product-price">4 990 <span class="wallet-ru">руб.</span></p>
+                    </div>
+                  </div>
+                  <div class="product-slider__slide">
+                    <div class="product-slider__slide-background-image" style="background-image: url(images/items-elems/main-slider/backgrounds/bg-1.png);"></div>
+                    <div class="product-slider__content-product"><img src="images/items-elems/main-slider/products/dron.png" alt=""></div>
+                    <div class="product-slider__content-text">
+                      <h4 class="product-slider__product-name">DJI Mavic PRO</h4>
+                      <p class="product-slider__product-about">32 MP Sphere Panoramas Foldable & Portable 3-Axis Gimbal & 4K Camera</p>
+                      <p class="product-slider__product-price">4 990 <span class="wallet-ru">руб.</span></p>
+                    </div>
+                  </div>
+                  <div class="product-slider__slide">
+                    <div class="product-slider__slide-background-image" style="background-image: url(images/items-elems/main-slider/backgrounds/bg-1.png);"></div>
+                    <div class="product-slider__content-product"><img src="images/items-elems/main-slider/products/dron.png" alt=""></div>
+                    <div class="product-slider__content-text">
+                      <h4 class="product-slider__product-name">DJI Mavic PRO</h4>
+                      <p class="product-slider__product-about">32 MP Sphere Panoramas Foldable & Portable 3-Axis Gimbal & 4K Camera</p>
+                      <p class="product-slider__product-price">4 990 <span class="wallet-ru">руб.</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-slider__arrows">
+                  <button class="product-slider__arrow product-slider__arrow-prev product-slider__arrow-hide" type="button"><img src="images/items-elems/arrow-prev.png" alt=""></button>
+                  <button class="product-slider__arrow product-slider__arrow-next" type="button"><img src="images/items-elems/arrow-next.png" alt=""></button>
+                </div>
+                <div class="product-slider__buttons">
+                  <span class="product-slider__button product-slider__button--active"></span>
+                  <span class="product-slider__button"></span>
+                  <span class="product-slider__button"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <main class="main">
+
+        <section class="block-slider">
+          <div class="container">
+            <div class="slider__header block-header">
+              <h2 class="block-title">Новинки</h2>
+              <ul class="products-cards__categories">
+                <li class="products-cards__categorie products-cards__categorie-active"><a href="#">Все</a></li>
+                <li class="products-cards__categorie"><a href="#">Компьютеры</a></li>
+                <li class="products-cards__categorie"><a href="#">Телефоны</a></li>
+                <li class="products-cards__categorie"><a href="#">Планшеты</a></li>
+                <li class="products-cards__categorie"><a href="#">Дроны</a></li>
+              </ul>
+            </div>
+            <div class="slider__inner">
+              <div class="product-cards" data-inner="slider-inner">
+                <div class="products-cards__item">
+                  <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                  <div class="products-cards__item-image">
+                    <a href="#">
+                      <img src="images/products/iphone-2.png" alt="">
+                    </a>
+                  </div>
+                  <div class="products-cards__item-bottom">
+                    <ul class="product-cards__item-characteristics">
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                        <p class="product-cards__item-characteristic-value">6.7</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">6</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">128</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                        <p class="product-cards__item-characteristic-value">2020</p>
+                      </li>
+                    </ul>
+                    <div class="product-cards__item-pricebox">
+                      <div class="products-cards__item-prices">
+                        <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                        <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                      </div>
+                      <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-cards__item">
+                  <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                  <div class="products-cards__item-image">
+                    <a href="#">
+                      <img src="images/products/PlayStatino5.png" alt="">
+                    </a>
+                  </div>
+                  <div class="products-cards__item-bottom">
+                    <ul class="product-cards__item-characteristics">
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                        <p class="product-cards__item-characteristic-value">6.7</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">6</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">128</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                        <p class="product-cards__item-characteristic-value">2020</p>
+                      </li>
+                    </ul>
+                    <div class="product-cards__item-pricebox">
+                      <div class="products-cards__item-prices">
+                        <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                        <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                      </div>
+                      <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-cards__item">
+                  <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                  <div class="products-cards__item-image">
+                    <a href="#">
+                      <img src="images/products/apple-watch-4.png" alt="">
+                    </a>
+                  </div>
+                  <div class="products-cards__item-bottom">
+                    <ul class="product-cards__item-characteristics">
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                        <p class="product-cards__item-characteristic-value">6.7</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">6</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">128</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                        <p class="product-cards__item-characteristic-value">2020</p>
+                      </li>
+                    </ul>
+                    <div class="product-cards__item-pricebox">
+                      <div class="products-cards__item-prices">
+                        <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                        <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                      </div>
+                      <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-cards__item">
+                  <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                  <div class="products-cards__item-image">
+                    <a href="#">
+                      <img src="images/products/laptop.png" alt="">
+                    </a>
+                  </div>
+                  <div class="products-cards__item-bottom">
+                    <ul class="product-cards__item-characteristics">
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                        <p class="product-cards__item-characteristic-value">6.7</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">6</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                        <p class="product-cards__item-characteristic-value">128</p>
+                      </li>
+                      <li class="product-cards__item-characteristic">
+                        <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                        <p class="product-cards__item-characteristic-value">2020</p>
+                      </li>
+                    </ul>
+                    <div class="product-cards__item-pricebox">
+                      <div class="products-cards__item-prices">
+                        <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                        <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                      </div>
+                      <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__arrows">
+                <button type="button" class="slider__arrow slider__arrow-left"><img src="images/items-elems/slider-arrow__left.png" alt=""></button>
+                <button type="button" class="slider__arrow slider__arrow-right"><img src="images/items-elems/slider-arrow__right.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="block-interesting-categories">
+          <div class="container">
+            <div class="interesting-categories__inner">
+              <div class="interesting-categories__item" style="background-image: url(images/items-elems/large-cards/JBL.jpg);">
+                <div class="interesting-categories__text">
+                  <p class="interesting-categories__item-title">Слушай музыку везде вместе с JBL</p>
+                  <p class="interesting-categories__item-subtitle">Скорей смотри новую колекцию JBL</p>
+                </div>
+              </div>
+              <div class="interesting-categories__item" style="background-image: url(images/items-elems/large-cards/Room.jpg);">
+                <div class="interesting-categories__text">
+                  <p class="interesting-categories__item-title">Комфортная и удобная техника для вас</p>
+                  <p class="interesting-categories__item-subtitle">Выбирайте удобную, красивую и мощную технику для своей работы или хобби</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="block-catalog">
+          <div class="container">
+            <div class="block-header">
+              <h2 class="block-title">Каталог товаров</h2>
+            </div>
+            <div class="product-cards" data-inner="slider-inner">
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/iphone-2.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/PlayStatino5.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/apple-watch-4.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/laptop.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/iphone-2.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/PlayStatino5.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/apple-watch-4.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-cards__item">
+                <a class="products-cards__item-caption" href="#">Iphone 12 Pro Max</a>
+                <div class="products-cards__item-image">
+                  <a href="#">
+                    <img src="images/products/laptop.png" alt="">
+                  </a>
+                </div>
+                <div class="products-cards__item-bottom">
+                  <ul class="product-cards__item-characteristics">
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Диагональ экрана: </p>
+                      <p class="product-cards__item-characteristic-value">6.7</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем оперативной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">6</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Объем встроенной памяти: </p>
+                      <p class="product-cards__item-characteristic-value">128</p>
+                    </li>
+                    <li class="product-cards__item-characteristic">
+                      <p class="product-cards__item-characteristic-designation">Модельный год: </p>
+                      <p class="product-cards__item-characteristic-value">2020</p>
+                    </li>
+                  </ul>
+                  <div class="product-cards__item-pricebox">
+                    <div class="products-cards__item-prices">
+                      <div class="products-cards__item-price_now">119 990 <span class="wallet-ru">руб.</span></div>
+                      <div class="products-cards__item-price_before"><s>140 000 <span class="wallet-ru">руб.</span></s></div>
+                    </div>
+                    <a class="product-cards__item-urlarrow" href="#"><img src="images/items-elems/url-arrow.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="block-stats">
+          <div class="container">
+            <div class="block-header">
+              <h2 class="block-title">Наша компания в цифрах</h2>
+            </div>
+            <ul class="stats__list">
+              <li class="stats__item">
+                <p class="stats__number">181</p>
+                <p class="stats__text">филиал по всему миру</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number">204</p>
+                <p class="stats__text">Товаров на нашем сайте</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number"><span>Более</span> 8976</p>
+                <p class="stats__text">довольных покупателей</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__number">6</p>
+                <p class="stats__text">часов доставки по стране</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="site-logo">
+              <img class="site-logo__img" src="images/site-logo__light.svg" alt="">
+              <div class="site-logo__title">
+                <p class="site-logo__main-title">Гаджетариум</p>
+                <p class="site-logo__subtitle">Магазин электроники</p>
+              </div>
+            </div>
+            <div class="navbar">
+                <nav class="nav">
+                  <ul class="nav-inner">
+                    <li class="nav-inner__item"><a href="#">Компьютеры</a></li>
+                    <li class="nav-inner__item"><a href="#">Телефоны</a></li>
+                    <li class="nav-inner__item"><a href="#">Планшеты</a></li>
+                    <li class="nav-inner__item"><a href="#">Дроны</a></li>
+                    <li class="nav-inner__item nav-inner__anouther">
+                      <a href="#">&bull; &bull; &bull;</a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="phone-call">
+                <a class="phone-call__number" href="tel:">+7 705 354 7809</a>
+                <a class="phone-call__button" href="tel:">Позвонить</a>
+            </div>
+            <div class="contacts">
+              <h2 class="contacs__title">Наши контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item"><a href="#">example@gmail.com</a></li>
+                <li class="contacts__item"><a href="#">Instagram</a></li>
+                <li class="contacts__item"><a href="#">Vkontakte</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
