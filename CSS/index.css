@@ -221,7 +221,8 @@ body {
   background-position: top right;
   background-size: contain;
 }
-.product-slider__slide--active {
+.product-slider__slide--active,
+.product-slider__slide--hide {
   display: flex;
   opacity: 1;
 }
@@ -243,6 +244,96 @@ body {
   right: 0;
   color: #fff;
 }
+
+.product-slider__slide--active .product-slider__content-product {
+  animation: swipe-to-left1 .6s ease-in-out 1;
+  -webkit-animation: swipe-to-left1 .6s ease-in-out 1;
+}
+.product-slider__slide--active .product-slider__content-text {
+  animation: swipe-to-left2 .8s ease-in-out 1;
+  -webkit-animation: swipe-to-left2 .8s ease-in-out 1;
+}
+@keyframes swipe-to-left1 {
+  0%, 50% {
+    opacity: 0;
+    transform: translateX(100px) translateY(-50%);
+    -webkit-transform: translateX(100px) translateY(-50%);
+    -moz-transform: translateX(100px) translateY(-50%);
+    -ms-transform: translateX(100px) translateY(-50%);
+    -o-transform: translateX(100px) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(-50%);
+    -webkit-transform: translateX(0px) translateY(-50%);
+    -moz-transform: translateX(0px) translateY(-50%);
+    -ms-transform: translateX(0px) translateY(-50%);
+    -o-transform: translateX(0px) translateY(-50%);
+  }
+}
+@keyframes swipe-to-left2 {
+  0%, 50% {
+    opacity: 0;
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+}
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+}
+
+/* .product-slider__slide--hide .product-slider__content-product {
+  animation: hide-to-left1 .6s ease-in-out 1;
+  -webkit-animation: hide-to-left1 .6s ease-in-out 1;
+}
+.product-slider__slide--hide .product-slider__content-text {
+  animation: hide-to-left2 .8s ease-in-out 1;
+  -webkit-animation: hide-to-left2 .8s ease-in-out 1;
+}
+@keyframes hide-to-left1 {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(-50%);
+    -webkit-transform: translateX(0px) translateY(-50%);
+    -moz-transform: translateX(0px) translateY(-50%);
+    -ms-transform: translateX(0px) translateY(-50%);
+    -o-transform: translateX(0px) translateY(-50%);
+  }
+  50%, 100% {
+    opacity: 0;
+    transform: translateX(-100px) translateY(-50%);
+    -webkit-transform: translateX(-100px) translateY(-50%);
+    -moz-transform: translateX(-100px) translateY(-50%);
+    -ms-transform: translateX(-100px) translateY(-50%);
+    -o-transform: translateX(-100px) translateY(-50%);
+  }
+}
+@keyframes hide-to-left2 {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+  50%, 100% {
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+  }
+} */
 
 .product-slider__product-name {
   font-weight: 900;
@@ -285,7 +376,7 @@ body {
 }
 
 .product-slider__slide-background-image {
-  position: inherit;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -536,11 +627,11 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  transition: background-size .3s ease-in-out;
-  -webkit-transition: background-size .3s ease-in-out;
-  -moz-transition: background-size .3s ease-in-out;
-  -ms-transition: background-size .3s ease-in-out;
-  -o-transition: background-size .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
 }
 .interesting-categories__item:hover {
   background-size: 110%;
